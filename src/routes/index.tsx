@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
 const services = [
   { number: "01", title: "Odontopediatria", icon: Smile, text: "Cuidado com a saúde bucal de bebês, crianças e adolescentes, respeitando cada etapa do desenvolvimento." },
   { number: "02", title: "Pré-natal odontológico", icon: Baby, text: "Orientação sobre saúde bucal durante a gestação e sobre os primeiros cuidados com o sorriso do bebê." },
-  { number: "03", title: "Pacientes especiais", icon: HeartHandshake, text: "Atenção às necessidades individuais, com escuta, acolhimento e planejamento de um cuidado adaptado." },
+  { number: "03", title: "Atendimento de pacientes especiais", icon: HeartHandshake, text: "Atenção às necessidades individuais, com escuta, acolhimento e planejamento de um cuidado adaptado." },
   { number: "04", title: "Atendimento com sedação", icon: Moon, text: "Uma possibilidade que depende de avaliação individual, indicação profissional e condições de segurança." },
 ];
 const faqs = [
