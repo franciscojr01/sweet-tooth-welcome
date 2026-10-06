@@ -4,8 +4,8 @@ import { ArrowDown, ArrowUpRight, Baby, Heart, HeartHandshake, Instagram, Menu, 
 import { Button } from "@/components/ui/button";
 import { Brand, ContactButton, ToothMark } from "@/components/clinic-brand";
 import { siteConfig } from "@/lib/site-config";
-import portrait from "@/assets/ana-carolina.asset.json";
-import care from "@/assets/atendimento.asset.json";
+import portrait from "@/assets/ana-carolina.png";
+import care from "@/assets/atendimento.png";
 
 const description = "Conheça a Dra. Ana Carolina: odontopediatria, pré-natal odontológico e cuidado acolhedor para crianças, adolescentes e pacientes especiais.";
 export const Route = createFileRoute("/")({
