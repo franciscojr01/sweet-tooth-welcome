@@ -20,7 +20,7 @@ export function ContactButton({ className = "", compact = false, floating = fals
   const [open, setOpen] = useState(false);
   const contact = () => {
     if (siteConfig.whatsappNumber) {
-      window.open(`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Olá! Gostaria de conhecer o atendimento da Dra. Ana Carolina e agendar uma consulta.")}`, "_blank", "noopener,noreferrer");
+      window.open(`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Olá Dra. Ana Carolina, vim pelo seu site e gostaria de agendar uma consulta.")}`, "_blank", "noopener,noreferrer");
     } else setOpen(true);
   };
   return <><Button variant="whatsapp" size="lg" className={`${floating ? "floating-contact" : "contact-button"} ${className}`} onClick={contact} aria-label="Agendar pelo WhatsApp"><WhatsAppIcon/><span>{compact ? "Agendar consulta" : "Agendar pelo WhatsApp"}</span>{!floating && <ArrowUpRight/>}</Button><Dialog open={open} onOpenChange={setOpen}><DialogContent className="contact-dialog"><div className="dialog-symbol"><WhatsAppIcon/></div><DialogTitle>Vamos conversar?</DialogTitle><DialogDescription>Esta é uma demonstração. O agendamento pelo WhatsApp estará disponível assim que o número oficial da Dra. Ana Carolina for informado.</DialogDescription><Button asChild variant="outline" size="lg"><a href={siteConfig.instagram} target="_blank" rel="noopener noreferrer"><Instagram/>Visitar @adentistacarolina<ArrowUpRight/></a></Button></DialogContent></Dialog></>;
